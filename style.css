@@ -1,0 +1,257 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fafafa;
+    --text: #1a1a1a;
+    --text-muted: #666;
+    --text-faint: #999;
+    --border: #e8e8e8;
+    --accent: #0969da;
+    --tag-bg: #f0f0f0;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Layout ===== */
+.header {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 80px 24px 0;
+}
+
+.layout {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 64px;
+    align-items: start;
+}
+
+.main {
+    min-width: 0;
+}
+
+/* ===== Header ===== */
+.header-intro {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.bio {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    max-width: 520px;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.links a {
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Sections ===== */
+.section {
+    margin-bottom: 48px;
+}
+
+.section-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===== Repo List ===== */
+.repo-list {
+    list-style: none;
+}
+
+.repo {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.repo:last-child {
+    border-bottom: none;
+}
+
+.repo-name {
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.repo-name:hover {
+    text-decoration: underline;
+}
+
+.repo-stars {
+    font-size: 0.75rem;
+    color: var(--text-faint);
+    margin-left: 10px;
+}
+
+.repo-lang {
+    font-size: 0.72rem;
+    color: var(--text-faint);
+    margin-left: 10px;
+    padding: 2px 7px;
+    background: var(--tag-bg);
+    border-radius: 4px;
+}
+
+.repo-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    position: sticky;
+    top: 80px;
+    padding-top: 4px;
+}
+
+.sidebar-section {
+    margin-bottom: 36px;
+}
+
+.sidebar-intro {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.sidebar-intro a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.sidebar-intro a:hover {
+    text-decoration: underline;
+}
+
+.article-list {
+    list-style: none;
+}
+
+.article {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.article:last-child {
+    border-bottom: none;
+}
+
+.article a {
+    font-size: 0.84rem;
+    color: var(--text);
+    text-decoration: none;
+    line-height: 1.4;
+    display: block;
+    transition: color 0.15s ease;
+}
+
+.article a:hover {
+    color: var(--accent);
+}
+
+/* ===== Footer ===== */
+.footer {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+    border-top: 1px solid var(--border);
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: var(--text-faint);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .sidebar {
+        position: static;
+        padding-top: 0;
+        margin-top: 16px;
+        padding-bottom: 32px;
+    }
+
+    .header {
+        padding: 48px 20px 0;
+    }
+
+    .layout {
+        padding: 0 20px;
+    }
+}
+
+/* ===== Selection ===== */
+::selection {
+    background: rgba(9, 105, 218, 0.12);
+}
