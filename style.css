@@ -162,6 +162,25 @@ body {
     line-height: 1.5;
 }
 
+.repo-highlight {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    margin-top: 6px;
+    padding-left: 12px;
+    border-left: 2px solid var(--accent);
+    line-height: 1.5;
+}
+
+.inline-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.inline-link:hover {
+    text-decoration: underline;
+}
+
 /* ===== Sidebar ===== */
 .sidebar {
     position: sticky;
