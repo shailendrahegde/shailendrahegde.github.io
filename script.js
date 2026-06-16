@@ -1,10 +1,10 @@
-// Minimal: just fade in items on load
+// Fade in cards on load
 document.addEventListener('DOMContentLoaded', () => {
-    const items = document.querySelectorAll('.repo');
-    items.forEach((el, i) => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((el, i) => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(8px)';
-        el.style.transition = `opacity 0.4s ease ${i * 0.04}s, transform 0.4s ease ${i * 0.04}s`;
+        el.style.transform = 'translateY(10px)';
+        el.style.transition = `opacity 0.5s ease ${i * 0.05}s, transform 0.5s ease ${i * 0.05}s`;
         requestAnimationFrame(() => {
             requestAnimationFrame(() => {
                 el.style.opacity = '1';

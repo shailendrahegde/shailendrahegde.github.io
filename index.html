@@ -7,137 +7,149 @@
     <meta name="description" content="Tech value isn't a single number - it's layered and I help users measure and understand it.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-intro">
-            <img src="https://avatars.githubusercontent.com/u/74619064?v=4" alt="" class="avatar">
-            <div>
-                <h1>Shailendra Hegde</h1>
-                <p class="subtitle">Microsoft · Seattle</p>
+    <div class="page">
+        <!-- Hero row -->
+        <div class="bento-row hero-row">
+            <div class="card card-intro">
+                <div class="header-intro">
+                    <img src="https://avatars.githubusercontent.com/u/74619064?v=4" alt="" class="avatar">
+                    <div>
+                        <h1>Shailendra Hegde</h1>
+                        <p class="subtitle">Microsoft · Seattle</p>
+                    </div>
+                </div>
+                <p class="bio">Tech value isn't a single number — it's layered. I help teams measure and understand it.</p>
+                <nav class="links">
+                    <a href="https://github.com/shailendrahegde">GitHub</a>
+                    <a href="https://www.ainroi.com">ainroi.com</a>
+                </nav>
+            </div>
+            <div class="card card-about">
+                <p>I'm a product and analytics leader at Microsoft. I build the measurement layer for enterprise AI — the tooling, frameworks, and proof that turns "we deployed Copilot" into "we're expanding because we can show the value."</p>
+                <p>Most of my work starts where packaged products stop: a customer question no report can answer, a data source no one has connected, a workflow that takes an analyst two days that we want to take two minutes. I go hands-on — write the pipeline, ship the asset, publish to GitHub — and then our team builds the system so the ecosystem can scale it without us.</p>
+                <p class="about-bg">Goldman Sachs → Deloitte (Strategy &amp; Analytics, Robotics &amp; AI) → Microsoft (behavioral-intelligence incubation, Copilot analytics).</p>
             </div>
         </div>
-        <p class="bio">Tech value isn't a single number — it's layered. I help teams measure and understand it.</p>
-        <nav class="links">
-            <a href="https://github.com/shailendrahegde">GitHub</a>
-            <a href="https://www.ainroi.com">ainroi.com</a>
-        </nav>
 
-        <!-- About -->
-        <section class="section about">
-            <p>I'm a product and analytics leader at Microsoft. I build the measurement layer for enterprise AI — the tooling, frameworks, and proof that turns "we deployed Copilot" into "we're expanding because we can show the value."</p>
-            <p>Most of my work starts where packaged products stop: a customer question no report can answer, a data source no one has connected, a workflow that takes an analyst two days that we want to take two minutes. I go hands-on — write the pipeline, ship the asset, publish to GitHub — and then our team builds the system so the ecosystem can scale it without us.</p>
-            <p class="about-bg">Goldman Sachs → Deloitte (Strategy & Analytics, Robotics & AI) → Microsoft (behavioral-intelligence incubation, Copilot analytics).</p>
-        </section>
-    </header>
-
-    <div class="layout">
-        <!-- Main column -->
-        <main class="main">
-            <!-- Microsoft & GitHub Open Source -->
-            <section class="section">
-                <h2 class="section-label">Microsoft & GitHub Open Source</h2>
-                <ul class="repo-list">
-                    <li class="repo">
-                        <a href="https://github.com/github/awesome-copilot" class="repo-name">github/awesome-copilot</a>
-                        <span class="repo-stars">35,081 ★</span>
-                        <p class="repo-desc">Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.</p>
-                        <p class="repo-highlight">↳ Author of <a href="https://awesome-copilot.github.com/plugins?q=whatidid" class="inline-link">whatidid</a> — turn Copilot sessions into proof-of-impact reports with effort estimation and ROI metrics.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/microsoft/AI-in-One-Dashboard" class="repo-name">microsoft/AI-in-One-Dashboard</a>
-                        <span class="repo-stars">51 ★</span>
-                        <p class="repo-desc">Power BI template for comprehensive AI usage analytics — a unified view of AI tool adoption across the enterprise.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/microsoft/CopilotChatAnalytics" class="repo-name">microsoft/CopilotChatAnalytics</a>
-                        <span class="repo-stars">15 ★</span>
-                        <p class="repo-desc">Free Chat and Agent usage analytics from log files.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/microsoft/DecodingSuperUsage" class="repo-name">microsoft/DecodingSuperUsage</a>
+        <!-- Microsoft & GitHub OS -->
+        <h2 class="section-label">Microsoft & GitHub Open Source</h2>
+        <div class="bento-grid">
+            <a href="https://github.com/github/awesome-copilot" class="card card-repo card-wide">
+                <div class="repo-header">
+                    <span class="repo-org">github</span>
+                    <span class="repo-stars">35,081 ★</span>
+                </div>
+                <h3 class="repo-name">awesome-copilot</h3>
+                <p class="repo-desc">Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.</p>
+                <p class="repo-highlight">↳ Author of <strong>whatidid</strong> — turn Copilot sessions into proof-of-impact reports with effort estimation and ROI metrics.</p>
+            </a>
+            <a href="https://github.com/microsoft/AI-in-One-Dashboard" class="card card-repo">
+                <div class="repo-header">
+                    <span class="repo-org">microsoft</span>
+                    <span class="repo-stars">51 ★</span>
+                </div>
+                <h3 class="repo-name">AI-in-One-Dashboard</h3>
+                <p class="repo-desc">Power BI template for comprehensive AI usage analytics — a unified view of AI tool adoption across the enterprise.</p>
+            </a>
+            <a href="https://github.com/microsoft/DecodingSuperUsage" class="card card-repo">
+                <div class="repo-header">
+                    <span class="repo-org">microsoft</span>
                     <span class="repo-stars">36 ★</span>
-                        <p class="repo-desc">Toolkit to analyze what super users of Copilot do differently, learn repeatable patterns, and drive adoption across the company.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/microsoft/M365UsageAnalytics" class="repo-name">microsoft/M365UsageAnalytics</a>
-                        <span class="repo-stars">11 ★</span>
-                        <p class="repo-desc">Stop guessing who gets a Copilot license. Analyze M365 usage patterns to surface the users most likely to benefit — and target training where it matters.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/microsoft/AI-Business-Value" class="repo-name">microsoft/AI-Business-Value</a>
-                        <span class="repo-stars">3 ★</span>
-                        <p class="repo-desc">AI value goes beyond time savings. Uncover what people are doing now that wasn't possible before — a data-driven story of transformation, not just efficiency.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/microsoft/GitHubCopilotImpact" class="repo-name">microsoft/GitHubCopilotImpact</a>
-                        <span class="repo-stars">7 ★</span>
-                        <p class="repo-desc">Analytics highlighting success patterns of developers who build habits with GitHub Copilot — adoption drivers and business value.</p>
-                    </li>
-                </ul>
-            </section>
+                </div>
+                <h3 class="repo-name">DecodingSuperUsage</h3>
+                <p class="repo-desc">Toolkit to analyze what super users of Copilot do differently, learn repeatable patterns, and drive adoption.</p>
+            </a>
+            <a href="https://github.com/microsoft/CopilotChatAnalytics" class="card card-repo">
+                <div class="repo-header">
+                    <span class="repo-org">microsoft</span>
+                    <span class="repo-stars">15 ★</span>
+                </div>
+                <h3 class="repo-name">CopilotChatAnalytics</h3>
+                <p class="repo-desc">Free Chat and Agent usage analytics from log files.</p>
+            </a>
+            <a href="https://github.com/microsoft/M365UsageAnalytics" class="card card-repo">
+                <div class="repo-header">
+                    <span class="repo-org">microsoft</span>
+                    <span class="repo-stars">11 ★</span>
+                </div>
+                <h3 class="repo-name">M365UsageAnalytics</h3>
+                <p class="repo-desc">Stop guessing who gets a Copilot license. Analyze M365 usage patterns to surface the users most likely to benefit.</p>
+            </a>
+            <a href="https://github.com/microsoft/AI-Business-Value" class="card card-repo">
+                <div class="repo-header">
+                    <span class="repo-org">microsoft</span>
+                    <span class="repo-stars">3 ★</span>
+                </div>
+                <h3 class="repo-name">AI-Business-Value</h3>
+                <p class="repo-desc">AI value goes beyond time savings. Uncover what people are doing now that wasn't possible before — a data-driven story of transformation, not just efficiency.</p>
+            </a>
+            <a href="https://github.com/microsoft/GitHubCopilotImpact" class="card card-repo">
+                <div class="repo-header">
+                    <span class="repo-org">microsoft</span>
+                    <span class="repo-stars">7 ★</span>
+                </div>
+                <h3 class="repo-name">GitHubCopilotImpact</h3>
+                <p class="repo-desc">Analytics highlighting success patterns of developers who build habits with GitHub Copilot — adoption drivers and business value.</p>
+            </a>
+        </div>
 
-            <!-- Personal Projects -->
-            <section class="section">
+        <!-- Projects + Writing row -->
+        <div class="bento-row projects-row">
+            <div class="projects-col">
                 <h2 class="section-label">Projects</h2>
-                <ul class="repo-list">
-                    <li class="repo">
-                        <a href="https://slopnomore.com" class="repo-name">slopnomore.com</a>
-                        <span class="repo-lang">JavaScript</span>
+                <div class="bento-grid">
+                    <a href="https://slopnomore.com" class="card card-repo card-wide">
+                        <div class="repo-header">
+                            <span class="repo-lang">JavaScript</span>
+                        </div>
+                        <h3 class="repo-name">slopnomore.com</h3>
                         <p class="repo-desc">An attempt to keep the internet clean from AI slop — making AI-generated text more human, one paste at a time.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/shailendrahegde/pbi-to-exec-deck" class="repo-name">pbi-to-exec-deck</a>
-                        <span class="repo-stars">10 ★</span>
-                        <span class="repo-lang">Python</span>
-                        <p class="repo-desc">Turn Power BI dashboards into executive-ready presentations automatically. Works with GitHub Copilot Chat or Claude Code.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/shailendrahegde/What-I-Did-Claude" class="repo-name">What-I-Did-Claude</a>
-                        <span class="repo-stars">3 ★</span>
-                        <span class="repo-lang">Python</span>
+                    </a>
+                    <a href="https://github.com/shailendrahegde/pbi-to-exec-deck" class="card card-repo">
+                        <div class="repo-header">
+                            <span class="repo-lang">Python</span>
+                            <span class="repo-stars">10 ★</span>
+                        </div>
+                        <h3 class="repo-name">pbi-to-exec-deck</h3>
+                        <p class="repo-desc">Turn Power BI dashboards into executive-ready presentations. Works with GitHub Copilot Chat or Claude Code.</p>
+                    </a>
+                    <a href="https://github.com/shailendrahegde/What-I-Did-Claude" class="card card-repo">
+                        <div class="repo-header">
+                            <span class="repo-lang">Python</span>
+                            <span class="repo-stars">3 ★</span>
+                        </div>
+                        <h3 class="repo-name">What-I-Did-Claude</h3>
                         <p class="repo-desc">Learn what you produced and how you produced it with Claude.</p>
-                    </li>
-                    <li class="repo">
-                        <a href="https://github.com/shailendrahegde/What-I-Did-AI" class="repo-name">What-I-Did-AI</a>
-                        <span class="repo-stars">1 ★</span>
-                        <span class="repo-lang">Python</span>
+                    </a>
+                    <a href="https://github.com/shailendrahegde/What-I-Did-AI" class="card card-repo">
+                        <div class="repo-header">
+                            <span class="repo-lang">Python</span>
+                            <span class="repo-stars">1 ★</span>
+                        </div>
+                        <h3 class="repo-name">What-I-Did-AI</h3>
                         <p class="repo-desc">Analyze what GitHub Copilot and Claude helped you build — and how your collaboration shapes delivery outcomes.</p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-section">
-                <h2 class="section-label">Writing</h2>
-                <p class="sidebar-intro">Thoughts on enterprise AI adoption at <a href="https://www.ainroi.com">ainroi.com</a></p>
-                <ul class="article-list">
-                    <li class="article">
-                        <a href="https://www.ainroi.com/?blog=what-i-learned-from-1-month-of-using-coding-agents">What I Learned From 1 Month of Using Coding Agents</a>
-                    </li>
-                    <li class="article">
-                        <a href="https://www.ainroi.com/?blog=ai-superusers-hidden-advantage">AI Superusers: The Hidden Advantage</a>
-                    </li>
-                    <li class="article">
-                        <a href="https://www.ainroi.com/?blog=data-driven-ai-adoption">Data-Driven AI Adoption</a>
-                    </li>
-                    <li class="article">
-                        <a href="https://www.ainroi.com/?blog=tipping-point-habit-formation">The Tipping Point: Habit Formation</a>
-                    </li>
-                    <li class="article">
-                        <a href="https://www.ainroi.com/?blog=roi-demands-patience">ROI Demands Patience</a>
-                    </li>
-                    <li class="article">
-                        <a href="https://www.ainroi.com/?blog=early-ai-adoption">Early AI Adoption</a>
-                    </li>
-                </ul>
+                    </a>
+                </div>
             </div>
-        </aside>
+            <div class="writing-col">
+                <h2 class="section-label">Writing</h2>
+                <div class="card card-writing">
+                    <p class="writing-intro">Thoughts on enterprise AI adoption at <a href="https://www.ainroi.com">ainroi.com</a></p>
+                    <ul class="article-list">
+                        <li><a href="https://www.ainroi.com/?blog=what-i-learned-from-1-month-of-using-coding-agents">What I Learned From 1 Month of Using Coding Agents</a></li>
+                        <li><a href="https://www.ainroi.com/?blog=ai-superusers-hidden-advantage">AI Superusers: The Hidden Advantage</a></li>
+                        <li><a href="https://www.ainroi.com/?blog=data-driven-ai-adoption">Data-Driven AI Adoption</a></li>
+                        <li><a href="https://www.ainroi.com/?blog=tipping-point-habit-formation">The Tipping Point: Habit Formation</a></li>
+                        <li><a href="https://www.ainroi.com/?blog=roi-demands-patience">ROI Demands Patience</a></li>
+                        <li><a href="https://www.ainroi.com/?blog=early-ai-adoption">Early AI Adoption</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
